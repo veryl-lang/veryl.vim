@@ -21,7 +21,7 @@ hi def link verylNumber Number
 " Operator
 syn match verylOperator1           "\m[~!&|^*+-/%><]"
 syn match verylAssignmentOperator1 "\m[=]"
-syn match verylOperator2           "\M<<\|>>\|<=\|>=\|==\|!=\|&&\|||"
+syn match verylOperator2           "\M<<\|>>\|<:\|>:\|<=\|>=\|==\|!=\|&&\|||"
 syn match verylAssignmentOperator2 "\M+=\|-=\|*=\|/=\|%=\|&=\||=\|\^="
 syn match verylOperator3           "\M<<<\|>>>\|===\|==?\|!==\|!=?"
 syn match verylAssignmentOperator3 "\M<<=\|>>="
