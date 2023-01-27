@@ -31,11 +31,11 @@ The following plugins support Veryl language server.
 <!-- :LspInstallServer -->
 <!-- ``` -->
 
-<!-- ### [mason](https://github.com/williamboman/mason.nvim) -->
-<!---->
-<!-- ``` -->
-<!-- :MasonInstall veryl-ls -->
-<!-- ``` -->
+### [mason](https://github.com/williamboman/mason.nvim)
+
+```
+:MasonInstall veryl-ls
+```
 
 ### [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
