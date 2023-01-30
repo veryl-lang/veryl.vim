@@ -54,6 +54,7 @@ hi def link verylStatement Statement
 
 syn keyword verylType logic bit tri signed
 syn keyword verylType u32 u64 i32 i64 f32 f64
+syn keyword verylType string
 hi def link verylType Type
 
 syn keyword verylDirection input output inout ref
