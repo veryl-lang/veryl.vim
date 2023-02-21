@@ -23,13 +23,13 @@ use {
 Language server for Veryl is provided at [Veryl](https://github.com/dalance/veryl).
 The following plugins support Veryl language server.
 
-<!-- ### [vim-lsp-settings](https://github.com/mattn/vim-lsp-settings) -->
-<!---->
-<!-- While editing a veryl file (*.vl) : -->
-<!---->
-<!-- ``` -->
-<!-- :LspInstallServer -->
-<!-- ``` -->
+### [vim-lsp-settings](https://github.com/mattn/vim-lsp-settings)
+
+While editing a veryl file (*.vl) :
+
+```
+:LspInstallServer
+```
 
 ### [mason](https://github.com/williamboman/mason.nvim)
 
