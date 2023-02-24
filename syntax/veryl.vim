@@ -50,6 +50,7 @@ syn keyword verylStatement async_high async_low sync_high sync_low
 syn keyword verylStatement always_ff always_comb assign return as
 syn keyword verylStatement var inst
 syn keyword verylStatement import export
+syn keyword verylStatement initial final
 hi def link verylStatement Statement
 
 syn keyword verylType logic bit tri signed
