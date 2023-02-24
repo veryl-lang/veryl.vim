@@ -68,7 +68,7 @@ syn keyword verylRepeat for in step repeat
 hi def link verylRepeat Repeat
 
 " Identifier
-syn match verylIdentifier "[a-zA-Z_][0-9a-zA-Z_]*"
+syn match verylIdentifier "\$\?[a-zA-Z_][0-9a-zA-Z_]*"
 hi def link verylIdentifier Identifier
 
 " Comment
