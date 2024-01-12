@@ -25,7 +25,7 @@ The following plugins support Veryl language server.
 
 ### [vim-lsp-settings](https://github.com/mattn/vim-lsp-settings)
 
-While editing a veryl file (*.vl) :
+While editing a veryl file (*.veryl) :
 
 ```
 :LspInstallServer

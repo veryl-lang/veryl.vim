@@ -1,4 +1,4 @@
-autocmd BufRead,BufNewFile *.vl call s:set_veryl_filetype()
+autocmd BufRead,BufNewFile *.veryl call s:set_veryl_filetype()
 
 function! s:set_veryl_filetype() abort
     if &filetype !=# 'veryl'
