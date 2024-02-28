@@ -1,6 +1,6 @@
 # veryl.vim
 
-This is a Vim plugin for [Veryl](https://github.com/dalance/veryl).
+This is a Vim plugin for [Veryl](https://github.com/veryl-lang/veryl).
 
 ## Installation
 
@@ -20,7 +20,7 @@ use {
 
 ## Language Server
 
-Language server for Veryl is provided at [Veryl](https://github.com/dalance/veryl).
+Language server for Veryl is provided at [Veryl](https://github.com/veryl-lang/veryl).
 The following plugins support Veryl language server.
 
 ### [vim-lsp-settings](https://github.com/mattn/vim-lsp-settings)

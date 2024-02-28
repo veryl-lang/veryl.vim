@@ -1,7 +1,7 @@
 " Veryl syntax file
 " Language:             Veryl
 " Maintainer:           Naoya Hatta <dalance@gmail.com>
-" URL:                  https://github.com/dalance/veryl
+" URL:                  https://github.com/veryl-lang/veryl
 " License:              MIT or Apache 2
 " ----------------------------------------------------------------------------
 
