@@ -7,14 +7,14 @@ This is a Vim plugin for [Veryl](https://github.com/dalance/veryl).
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'dalance/veryl.vim'
+Plug 'veryl-lang/veryl.vim'
 ```
 
 ### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
 use {
-  'dalance/veryl.vim',
+  'veryl-lang/veryl.vim',
 }
 ```
 
