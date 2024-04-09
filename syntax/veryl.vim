@@ -42,6 +42,7 @@ hi def link verylSymbol Special
 " Keyword
 syn keyword verylStructure module interface function modport package pub
 syn keyword verylStructure enum struct
+syn keyword verylStructure embed
 hi def link verylStructure Structure
 
 syn keyword verylStatement param local
@@ -79,5 +80,13 @@ hi def link verylComment Comment
 " String
 syn region verylString start="\"" skip="\\\"" end="\""
 hi def link verylString String
+
+syn include @python syntax/python.vim
+unlet b:current_syntax
+syn region pyBlock matchgroup=verylStructure start="python{{{" end="}}}" contains=@python keepend
+
+syn include @systemverilog syntax/systemverilog.vim
+unlet b:current_syntax
+syn region svBlock matchgroup=verylStructure start="sv{{{" end="}}}" contains=@systemverilog keepend
 
 let b:current_syntax = 'veryl'
