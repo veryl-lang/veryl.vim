@@ -42,7 +42,7 @@ hi def link verylSymbol Special
 " Keyword
 syn keyword verylStructure module interface function modport package pub
 syn keyword verylStructure enum struct
-syn keyword verylStructure embed
+syn keyword verylStructure embed include
 hi def link verylStructure Structure
 
 syn keyword verylStatement param local
