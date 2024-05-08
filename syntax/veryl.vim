@@ -46,8 +46,8 @@ syn keyword verylStructure embed include
 hi def link verylStructure Structure
 
 syn keyword verylStatement param local
-syn keyword verylStatement posedge negedge
-syn keyword verylStatement async_high async_low sync_high sync_low
+syn keyword verylStatement clock clock_posedge clock_negedge
+syn keyword verylStatement reset reset_async_high reset_async_low reset_sync_high reset_sync_low
 syn keyword verylStatement always_ff always_comb assign return as break
 syn keyword verylStatement var inst let
 syn keyword verylStatement import export
