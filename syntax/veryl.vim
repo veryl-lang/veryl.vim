@@ -15,7 +15,8 @@ syn match verylNumber "\(\<\d\+\|\)'[sS]\?[bB]\s*[0-1_xXzZ?]\+\>"
 syn match verylNumber "\(\<\d\+\|\)'[sS]\?[oO]\s*[0-7_xXzZ?]\+\>"
 syn match verylNumber "\(\<\d\+\|\)'[sS]\?[dD]\s*[0-9_xXzZ?]\+\>"
 syn match verylNumber "\(\<\d\+\|\)'[sS]\?[hH]\s*[0-9a-fA-F_xXzZ?]\+\>"
-syn match verylNumber "\<\=[0-9_]\+\(\.[0-9_]*\|\)\([eE][+-][0-9_]*\|\)\>"
+syn match verylNumber "\<[0-9_]\+\(\.[0-9_]*\|\)\([eE][+-][0-9_]*\|\)\>"
+syn match verylNumber "'[01xzXZ]"
 hi def link verylNumber Number
 
 " Operator
@@ -30,10 +31,10 @@ syn match verylAssignmentOperator4 "\M<<<=\|>>>="
 hi def link verylOperator1           Operator
 hi def link verylOperator2           Operator
 hi def link verylOperator3           Operator
-hi def link verylAssignmentOperator1 Special
-hi def link verylAssignmentOperator2 Special
-hi def link verylAssignmentOperator3 Special
-hi def link verylAssignmentOperator4 Special
+hi def link verylAssignmentOperator1 Operator
+hi def link verylAssignmentOperator2 Operator
+hi def link verylAssignmentOperator3 Operator
+hi def link verylAssignmentOperator4 Operator
 
 " Symbol
 syn match verylSymbol "[)(#@:;}{,.\[\]]"
@@ -46,15 +47,14 @@ syn keyword verylStructure embed include unsafe
 hi def link verylStructure Structure
 
 syn keyword verylStatement param local
-syn keyword verylStatement clock clock_posedge clock_negedge
-syn keyword verylStatement reset reset_async_high reset_async_low reset_sync_high reset_sync_low
 syn keyword verylStatement always_ff always_comb assign return as break
 syn keyword verylStatement var inst let
 syn keyword verylStatement import export
 syn keyword verylStatement initial final
-syn keyword verylStatement default
 hi def link verylStatement Statement
 
+syn keyword verylType clock clock_posedge clock_negedge
+syn keyword verylType reset reset_async_high reset_async_low reset_sync_high reset_sync_low
 syn keyword verylType logic bit tri signed
 syn keyword verylType u32 u64 i32 i64 f32 f64
 syn keyword verylType string
@@ -63,15 +63,15 @@ hi def link verylType Type
 syn keyword verylDirection input output inout ref
 hi def link verylDirection Keyword
 
-syn keyword verylConditional if if_reset else for in case switch inside outside
+syn keyword verylConditional if if_reset else for in case switch inside outside default
 hi def link verylConditional Conditional
 
 syn keyword verylRepeat for in step repeat
 hi def link verylRepeat Repeat
 
-" Identifier
-syn match verylIdentifier "\$\?[a-zA-Z_][0-9a-zA-Z_]*"
-hi def link verylIdentifier Identifier
+" Constant
+syn match verylConstant "\<[A-Z][0-9A-Z_]\+\>"
+hi def link verylConstant Constant
 
 " Comment
 syn region verylComment start="/\*" end="\*/"
