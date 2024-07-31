@@ -52,6 +52,7 @@ syn keyword verylStatement always_ff always_comb assign return as break
 syn keyword verylStatement var inst let
 syn keyword verylStatement import export
 syn keyword verylStatement initial final
+syn keyword verylStatement default
 hi def link verylStatement Statement
 
 syn keyword verylType logic bit tri signed
