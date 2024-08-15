@@ -69,6 +69,10 @@ hi def link verylConditional Conditional
 syn keyword verylRepeat for in step repeat
 hi def link verylRepeat Repeat
 
+" Clock Domain
+syn match verylClockDomain "`[a-zA-Z_][a-zA-Z0-9_]*"
+hi def link verylClockDomain Constant
+
 " Constant
 syn match verylConstant "\<[A-Z][0-9A-Z_]\+\>"
 hi def link verylConstant Constant
