@@ -88,7 +88,7 @@ hi def link verylString String
 
 syn include @python syntax/python.vim
 unlet b:current_syntax
-syn region pyBlock matchgroup=verylStructure start="python{{{" end="}}}" contains=@python keepend
+syn region pyBlock matchgroup=verylStructure start="py{{{" end="}}}" contains=@python keepend
 
 syn include @systemverilog syntax/systemverilog.vim
 unlet b:current_syntax
