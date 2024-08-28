@@ -41,12 +41,12 @@ syn match verylSymbol "[)(#@:;}{,.\[\]]"
 hi def link verylSymbol Special
 
 " Keyword
-syn keyword verylStructure module interface function modport package pub
+syn keyword verylStructure module interface function modport package pub proto
 syn keyword verylStructure enum struct
 syn keyword verylStructure embed include unsafe
 hi def link verylStructure Structure
 
-syn keyword verylStatement param local
+syn keyword verylStatement param local const
 syn keyword verylStatement always_ff always_comb assign return as break
 syn keyword verylStatement var inst let
 syn keyword verylStatement import export
