@@ -46,7 +46,7 @@ syn keyword verylStructure enum struct
 syn keyword verylStructure embed include unsafe
 hi def link verylStructure Structure
 
-syn keyword verylStatement param local const
+syn keyword verylStatement param local const type
 syn keyword verylStatement always_ff always_comb assign return as break
 syn keyword verylStatement var inst let
 syn keyword verylStatement import export
