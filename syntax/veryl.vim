@@ -60,7 +60,7 @@ syn keyword verylType u32 u64 i32 i64 f32 f64
 syn keyword verylType string
 hi def link verylType Type
 
-syn keyword verylDirection input output inout ref
+syn keyword verylDirection input output inout ref converse
 hi def link verylDirection Keyword
 
 syn keyword verylConditional if if_reset else for in case switch inside outside default
