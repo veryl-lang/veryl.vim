@@ -41,32 +41,22 @@ syn match verylSymbol "[)(#@:;}{,.\[\]]"
 hi def link verylSymbol Special
 
 " Keyword
-syn keyword verylStructure module interface function modport package pub proto
-syn keyword verylStructure enum struct
-syn keyword verylStructure embed include unsafe
+syn keyword verylStructure embed enum function include interface modport module package proto pub struct union unsafe
 hi def link verylStructure Structure
 
-syn keyword verylStatement param local const type
-syn keyword verylStatement always_ff always_comb assign return as break
-syn keyword verylStatement var inst let
-syn keyword verylStatement import export
-syn keyword verylStatement initial final
+syn keyword verylStatement alias always_comb always_ff assign as connect const final import initial inst let param return break type var
 hi def link verylStatement Statement
 
-syn keyword verylType clock clock_posedge clock_negedge
-syn keyword verylType reset reset_async_high reset_async_low reset_sync_high reset_sync_low
-syn keyword verylType logic bit tri signed
-syn keyword verylType u32 u64 i32 i64 f32 f64
-syn keyword verylType string
+syn keyword verylType bit bool clock clock_posedge clock_negedge f32 f64 i8 i16 i32 i64 logic reset reset_async_high reset_async_low reset_sync_high reset_sync_low signed string tri u8 u16 u32 u64
 hi def link verylType Type
 
-syn keyword verylDirection input output inout ref converse same
+syn keyword verylDirection converse inout input output same
 hi def link verylDirection Keyword
 
-syn keyword verylConditional if if_reset else for in case switch inside outside default
+syn keyword verylConditional case default else if_reset if inside outside switch
 hi def link verylConditional Conditional
 
-syn keyword verylRepeat for in step repeat
+syn keyword verylRepeat for in repeat step
 hi def link verylRepeat Repeat
 
 " Clock Domain
