@@ -56,7 +56,7 @@ hi def link verylDirection Keyword
 syn keyword verylConditional case default else if_reset if inside outside switch
 hi def link verylConditional Conditional
 
-syn keyword verylRepeat for in repeat step
+syn keyword verylRepeat for in repeat rev step
 hi def link verylRepeat Repeat
 
 " Clock Domain
