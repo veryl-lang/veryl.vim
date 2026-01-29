@@ -47,7 +47,7 @@ hi def link verylStructure Structure
 syn keyword verylStatement alias always_comb always_ff assign as bind connect const final import initial inst let param return break type var
 hi def link verylStatement Statement
 
-syn keyword verylType bit bool clock clock_posedge clock_negedge f32 f64 i8 i16 i32 i64 logic reset reset_async_high reset_async_low reset_sync_high reset_sync_low signed string tri u8 u16 u32 u64
+syn keyword verylType bit bbool lbool clock clock_posedge clock_negedge f32 f64 i8 i16 i32 i64 logic reset reset_async_high reset_async_low reset_sync_high reset_sync_low signed string tri u8 u16 u32 u64
 hi def link verylType Type
 
 syn keyword verylDirection converse inout input output same
