@@ -41,7 +41,7 @@ syn match verylSymbol "[)(#@:;}{,.\[\]]"
 hi def link verylSymbol Special
 
 " Keyword
-syn keyword verylStructure embed enum function include interface modport module package proto pub struct union unsafe
+syn keyword verylStructure embed enum function impl include interface modport module package proto pub struct union unsafe
 hi def link verylStructure Structure
 
 syn keyword verylStatement alias always_comb always_ff assign as bind block connect const final gen import initial inst let mixin param return break type var
